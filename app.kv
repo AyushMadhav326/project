@@ -1,0 +1,36 @@
+<MyRoot>:
+
+    random_label: random_label
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 50
+        spacing: '50dp'
+        Label:
+            text:"choose the project"
+            font_size: 60
+            size_hint_x: None
+            width:710
+            color:0.92,0.45,0
+        Label:
+            id: random_label
+            text: "to see the demo"
+            font_size: 60
+            size_hint_y: None
+            hieght:10
+            color:0.92,0.45,0
+        Button:
+            text: "Music recommendation"
+            color:0,0,0
+            size_hint_y: None
+            hieght:50
+            font_size: 34
+            on_press: root.generate_number()
+        Button:
+            text: "motion detection"
+            color:0,0,0
+            size_hint_y: None
+            hieght:30
+            font_size: 34
+            on_press: root.motion_open()
+            
